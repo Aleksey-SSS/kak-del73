@@ -45,7 +45,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
 
     "corsheaders.middleware.CorsMiddleware",
-
+'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -123,9 +123,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-ALLOWED_HOSTS = ['afternoon-falls-71611.herokuapp.com', '127.0.0.1']
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
+ALLOWED_HOSTS = [
+    '127.0.0.1'
+    'dqwr3rdf3.herokuapp.com'
+]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
     BASE_DIR / 'frontend/build/static'
 ]
