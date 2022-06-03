@@ -1,9 +1,9 @@
 from distutils.command.upload import upload
 from operator import mod
-from turtle import update
 from venv import create
 from django.db import models
 from pyparsing import null_debug_action
+from turtle import update
 
 # Create your models here.
 

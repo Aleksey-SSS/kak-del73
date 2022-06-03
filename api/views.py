@@ -2,7 +2,6 @@
 
 from email.mime import image
 from pickle import GET
-from tkinter import Image
 from urllib import response
 from django.shortcuts import render
 from rest_framework.response import Response
