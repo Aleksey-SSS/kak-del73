@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "google-maps-react": "^2.0.6",
+    "react-helmet": "^6.1.0",
+    "react-yandex-maps": "^4.6.0"
+  }
+}
